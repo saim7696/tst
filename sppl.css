@@ -1,0 +1,555 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(145, 144, 144);
+    font-family: serif;
+    height: 100vh;
+    width: 100%;
+
+}
+/* navbar stars here */
+.nav{
+    height: 100px;
+    width: 100%;
+    background: tomato;
+    opacity: .8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo with animation */
+.logo{
+    height: 100%;
+    width: 180px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    animation: logo 04s  infinite;
+
+
+}
+@keyframes logo{
+    0%{
+        color: red;
+
+    }
+    10%{
+        color: rgb(223, 132, 132);
+
+    }
+    20%{
+        color: rgb(136, 255, 0);
+
+    }
+    30%{
+        color: rgb(12, 126, 179);
+
+    }
+    40%{
+        color: rgb(172, 17, 219);
+
+    }
+    50%{
+        color: rgba(99, 32, 223, 0.253);
+
+    }
+    60%{
+        color: rgb(175, 7, 153);
+
+    }
+    80%{
+        color: rgb(202, 7, 192);
+
+    }
+    70%{
+        color: rgb(180, 7, 7);
+
+    }
+    90%{
+        color: rgb(11, 192, 147);
+
+    }
+    100%{
+        color: rgb(195, 207, 16);
+
+    }
+    
+    
+}
+
+/* logo with animation */
+.menu ul{
+   display: flex;
+  list-style: none;
+  
+    
+}
+.menu ul li{
+    margin-left: 150px;
+    font-size: 18px;
+    display: flex;
+    transition: .8s;
+    padding: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    color: blue;
+    scale: 1.1;
+    letter-spacing: 3px;
+    transform: translateY(-12px);
+    
+}
+.menu li::before{
+    position: absolute;
+    background: blue;
+    height: 0px;
+    width: 000%;
+    content: "";
+    bottom: 0;
+    left: 0;
+
+}
+.menu li:hover::before{
+    position: absolute;
+    background: blue;
+    height: 3px;
+    width: 100%;
+    content: "";
+    bottom: 0;
+    left:0;
+    transition: .8s;
+
+}
+.menu li::after{
+    position: absolute;
+    background:red;
+    height: 0px;
+    width: 00%;
+    content: "";
+    top: 0;
+    right: 0;
+    transition: .8s;
+
+}
+.menu li:hover::after{
+    position: absolute;
+    background:red;
+    height: 3px;
+    width: 100%;
+    content: "";
+    top: 0;
+    right: 0;
+
+}
+
+.li1{
+    position: relative;
+    overflow: hidden;
+}
+.sub{
+    position: absolute;
+    margin-top: 35px;
+    
+}
+.sub ul{
+    display: block;
+}
+.sub li{
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 14px;
+    margin-top: px;
+    border-radius: 0px;
+}
+
+.menu li:hover .sub ul
+{
+    margin-top: -10px;
+margin-left: -130px;
+color: black;
+letter-spacing: 2px;
+overflow: visible;
+
+}
+.li1:hover{
+    overflow: visible;
+}
+
+.btn{
+    height: 100%;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+.btn button{
+    background: none;
+    padding: 8px;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn button:hover{
+    scale: 1.2;
+    transition: .4s;
+    font-size: 19px;
+    letter-spacing: 2px;
+}
+
+/* **Navbar Ends Here** */
+
+/* hero section starts here */
+.hero{
+   
+    height: 350px;
+    width: 100%;
+    background: url(oil.jpg);
+    background-size: cover;
+}
+
+.hero-message{
+    width: 100%;
+    height: 200px;
+   
+}
+
+.hero-message h1{
+    
+    font-size: 65px;
+    color: white;
+    margin-left: 120px;
+}
+.name{
+    height: 80px;
+    width: 100%;
+    color: white;
+    font-size: 40px;
+    animation: name 2s infinite;
+    margin-top: -50px;
+}
+@keyframes name {
+    0%{
+        color: blue;
+
+    }
+    25%{
+        color: pink;
+    }
+    50%{
+        color: rgb(238, 15, 219);
+    }
+    100%{
+        color: rgb(7, 221, 7);
+    }
+}
+.btn1{
+    background: red;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    margin-left: 136px;
+    border-radius: 4px;
+    scale: .8;
+   
+}
+.btn1:hover{
+    scale: 1;
+    font-weight: bold;
+    animation: ease-in-out;
+    transition: .4s;
+}
+
+/* hero section ends here */
+
+.msg{
+    height: 300px;
+    width: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.msg h1{
+    
+    font-size: 50px;
+    width: 340px;
+   
+    
+  
+}
+.msg p{
+   
+    width: 860px;
+}
+
+.box{
+    height: 600px;
+    width: 100%;
+    background: gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.boxx{
+    border: 2px solid white;
+    border-radius: 8px;
+    
+    background-size: cover ;
+}
+.boxx:hover{
+    scale: 1.2;
+    transition: .4s;
+ 
+}
+.box1{
+    height: 250px;
+    width: 23%;
+    background:url(asset\ 9.png) ;
+    background-size: cover;
+}
+.box2{
+    height: 250px;
+    width: 23%;
+    background: url(hr.png);
+    background-size: cover;
+}
+.box3{
+    height: 250px;
+    width: 23%;
+    background:url(ss.png) ;
+    background-size: cover;
+
+}
+.box4{
+    height: 250px;
+    width: 23%;
+    background: url(spl.jpg.jpg);
+    background-size: cover;
+}
+.box5{
+    height: 250px;
+    width: 23%;
+    background: url(petroleum.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.box6{
+    height: 250px;
+    width: 23%;
+    background:url(assets/sp1.png);
+    background-size: cover;
+    background-position: center;
+}
+.box7{
+    height: 250px;
+    width: 23%;
+    background: url(assets/sp2.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.box8{
+    height: 250px;
+    width: 23%;
+    background: url(assets/sp4.jpeg);
+    background-position: center;
+background-size: cover;}
+    
+.iframe{
+    height: 250px;
+    width: 100%;
+    background: #000;
+    display: flex;
+    
+    
+}
+.video{
+    height: 100%;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 13px;
+}
+.map{
+    height: 100%;
+    width: 50%;
+    border: 2px solid white;
+    border-radius: 13px;
+}
+
+iframe{
+    height: 100%;
+    width: 100%;
+
+}
+
+/* foot starts */
+.foot{
+    height: 250px;
+    width: 100%;
+    background: rgb(49, 40, 40);
+    display: flex;
+}
+
+.container1{
+    height: 100%;
+    width: 33%;
+    
+    color: white;
+
+}
+.cont-1a{
+    display: flex;
+    font-size: 1.4rem;
+    align-items: center;
+    justify-content: right;
+}
+.cont-1a i{
+    padding: 10px;
+}
+.cont-1b{
+    position: relative;
+}
+.cont-1b .p1{
+    right: 0;
+    position: absolute;
+}
+.cont-1b .p2{
+    right: 0;
+    position: absolute;
+    top: 18px;
+}
+.cont-1b p{
+   font-size: 1rem;
+}
+
+.icon{
+   display: flex;
+   justify-content: flex-end ;
+}
+.icon i{
+    padding: 15px;
+    scale: 1.8;
+    margin-top: 65px;
+    color: red;
+    cursor: pointer;
+
+}
+.icon i:hover{
+    color: blue;
+    scale: 2;
+    transform: translateY(-10px);
+    transition: .8s;
+}
+.container2{
+    height: 100%;
+    width: 33%;
+    align-items: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.container2 h2{
+    margin-top: 10px;
+}
+ul{
+    list-style: none;
+}
+.container3{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container3 h2{
+    margin-top: 10px;
+}
+.container3 input{
+   
+    width: 220px;
+    height: 40px;
+    background: transparent;
+    border-radius: 6px;
+    padding: 8px;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 3px;
+}
+.inp{
+    margin-top: 10px;
+}
+.container3 button{
+    height: 45px;
+    width:170px ;
+    padding: 8px;
+    margin-top: 09px;
+    border-radius: 8px;
+    
+}
+.container3 button:hover{
+    transform: translateX(10px);
+    scale: 1.2;
+    transition: .6s;
+}
+.about{
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    
+}
+/* <!-- about section stats */
+.bx{
+    height: 100%;
+    width: 80%;
+    background:url(oil.jpg);
+    background-size: cover;
+    
+    position: relative;
+    overflow: hidden;
+    
+}
+.bx:hover .overlap{
+    left: 0;
+    transition: .8s;
+
+}
+.overlap{
+    width: 35%;
+    height: 100%;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -35%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.overlap h2{
+    font-size: 35px;
+    width: 180px;
+}
+.bx .btn{
+    position: absolute;
+    right: 60%;
+}
+
+.bx:hover .btn{
+    right: 42%;
+    transition: 1s;
+}
+/* <!-- about section -->ends here */
